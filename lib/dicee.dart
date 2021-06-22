@@ -15,15 +15,15 @@ class Dicee extends StatelessWidget {
         child: Row(
           children: <Widget>[
             Expanded(
-              child: Padding(
-                padding: const EdgeInsets.all(16.0),
+              child: TextButton(
                 child: Image.asset('images/dice1.png'),
+                onPressed: () {},
               ),
             ),
             Expanded(
-              child: Padding(
-                padding: const EdgeInsets.all(16.0),
-                child: Image.asset('images/dice1.png'),
+              child: TextButton(
+                child: Image.asset('images/dice2.png'),
+                onPressed: () {},
               ),
             ),
           ],
