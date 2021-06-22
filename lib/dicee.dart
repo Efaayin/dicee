@@ -8,17 +8,23 @@ class Dicee extends StatelessWidget {
     return Scaffold(
       backgroundColor: Colors.blue,
       appBar: AppBar(
-        title: Text('Sugar'),
+        title: Text('Dicee'),
         backgroundColor: Colors.blue,
       ),
       body: Center(
         child: Row(
           children: <Widget>[
             Expanded(
-              child: Image.asset('images/dice1.png'),
+              child: Padding(
+                padding: const EdgeInsets.all(16.0),
+                child: Image.asset('images/dice1.png'),
+              ),
             ),
             Expanded(
-              child: Image.asset('images/dice1.png'),
+              child: Padding(
+                padding: const EdgeInsets.all(16.0),
+                child: Image.asset('images/dice1.png'),
+              ),
             ),
           ],
         ),
