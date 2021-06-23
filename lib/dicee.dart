@@ -1,13 +1,17 @@
 import 'package:flutter/material.dart';
 
-class Dicee extends StatelessWidget {
-  Dicee({Key? key}) : super(key: key);
+class Dice extends StatefulWidget {
+  Dice({Key? key}) : super(key: key);
+
+  @override
+  _DiceState createState() => _DiceState();
+}
+
+class _DiceState extends State<Dice> {
+  int leftDiceNumber = 4;
 
   @override
   Widget build(BuildContext context) {
-    
-    var leftDiceNumber = 4;
-
     return Scaffold(
       backgroundColor: Colors.blue,
       appBar: AppBar(

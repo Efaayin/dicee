@@ -8,7 +8,7 @@ void main() {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: Dicee(),
+      home: Dice(),
     ),
   );
 }
