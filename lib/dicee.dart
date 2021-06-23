@@ -6,7 +6,7 @@ class Dicee extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     
-    var leftDiceNumber = 6;
+    var leftDiceNumber = 4;
 
     return Scaffold(
       backgroundColor: Colors.blue,
