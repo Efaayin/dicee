@@ -1,10 +1,13 @@
 import 'package:flutter/material.dart';
 
 class Dicee extends StatelessWidget {
-  const Dicee({Key? key}) : super(key: key);
+  Dicee({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
+    
+    var leftDiceNumber = 6;
+
     return Scaffold(
       backgroundColor: Colors.blue,
       appBar: AppBar(
@@ -16,14 +19,14 @@ class Dicee extends StatelessWidget {
           children: <Widget>[
             Expanded(
               child: TextButton(
-                child: Image.asset('images/dice1.png'),
+                child: Image.asset('images/dice$leftDiceNumber.png'),
                 onPressed: () {},
               ),
             ),
             Expanded(
               child: TextButton(
                 child: Image.asset('images/dice2.png'),
-                onPressed: () {},
+                onPressed: () {print('right button clicked');},
               ),
             ),
           ],
