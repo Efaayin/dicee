@@ -64,6 +64,30 @@ class _DiceState extends State<Dice> {
                 ),
               ),
             ),
+            SizedBox(
+              height: 10.0,
+            ),
+            ElevatedButton(
+              child: Text(
+                'Reset Dice',
+                style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 20,
+                ),
+              ),
+              onPressed: () {
+                setState(() {
+                  leftDieNumber = 1;
+                  rightDieNumber = 1;
+                });
+              },
+              style: ButtonStyle(
+                backgroundColor: MaterialStateProperty.all<Color>(Colors.red.shade400),
+                padding: MaterialStateProperty.all<EdgeInsets>(
+                  EdgeInsets.fromLTRB(50, 10, 50, 10),
+                ),
+              ),
+            ),
           ],
         ),
       ),
